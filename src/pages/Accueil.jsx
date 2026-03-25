@@ -4,10 +4,13 @@ function Accueil() {
   return (
     <section className="hero">
 
-      <img src={photo} alt="Mariama" className="profile-img" />
+      <img src={photo} alt="Mariama Sadio" className="profile-img" />
 
-      <h1>Bonjour, je suis Mariama Sadio</h1>
-      <p>Développeuse Web et Mobile</p>
+      <h1>Bonjour, je suis <span>Mariama Sadio</span> </h1>
+
+      <p className="subtitle">
+        Développeuse Web & Mobile passionnée par la création d’applications modernes.
+      </p>
 
       <div className="hero-buttons">
         <a href="/projects" className="btn">Voir mes projets</a>

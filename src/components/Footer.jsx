@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <footer>
-      <p>Mariama Sadio</p>
+      <p>© 2026 Mariama Sadio | Développeuse Web</p>
     </footer>
   )
 }
