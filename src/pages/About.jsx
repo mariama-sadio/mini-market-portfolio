@@ -1,22 +1,72 @@
+import photo from "../assets/ms.jpg"
 function About() {
   return (
     <section className="about">
-      <h2>À propos de moi</h2>
 
-      <p>
-        Je suis apprenente en  Développement Web et Mobile.
-      </p>
+      <div className="about-container">
 
-      <h3>Mes compétences</h3>
+      
+        <div className="about-text">
+          <img src={photo} alt="Mariama" className="about-img" />
+          <h1>QUI SUIS-JE ?</h1>
 
-      <ul className="skills">
-        <li>HTML / CSS</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Laravel</li>
-        <li>Git & GitHub</li>
-        <li>MySQL</li>
-      </ul>
+          <h2>
+            Je suis Mariama Sadio, apprenante en Développement Web et Mobile.
+          </h2>
+
+          <p>
+            Je crée des projets avec React et Laravel.
+            J’aime concevoir des interfaces simples, rapides et efficaces.
+          </p>
+        </div>
+
+        
+        <div className="skills">
+
+          <div className="skill">
+            <span>HTML ET CSS</span>
+            <div className="progress">
+              <div className="progress-bar html"></div>
+            </div>
+            <span>80%</span>
+          </div>
+
+          <div className="skill">
+            <span>React</span>
+            <div className="progress">
+              <div className="progress-bar react"></div>
+            </div>
+            <span>50%</span>
+          </div>
+
+          <div className="skill">
+            <span>JAVASCRIPT</span>
+            <div className="progress">
+              <div className="progress-bar js"></div>
+            </div>
+            <span>10%</span>
+          </div>
+
+          <div className="skill">
+            <span>Laravel</span>
+            <div className="progress">
+              <div className="progress-bar laravel"></div>
+            </div>
+            <span>75%</span>
+          </div>
+
+          <div className="skill">
+            <span>PHP</span>
+            <div className="progress">
+              <div className="progress-bar php"></div>
+            </div>
+            <span>85%</span>
+          </div>
+
+        </div>
+
+      </div>
+
     </section>
   )
 }

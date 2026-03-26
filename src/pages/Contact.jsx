@@ -2,7 +2,14 @@ function Contact() {
   return (
     <section className="contact-container">
 
-      <h2>Contact</h2>
+      <h2>Contactez-moi</h2>
+
+      <p>Vous pouvez me contacter en utilisant le formulaire ci-dessous :</p>
+      <div className="contact-info">
+        <p>📞 +221 78 735 99 83</p>
+        <p>📧 mariamasadio796@gmail.com</p>
+        <p>📍 Thiès, Sénégal</p>
+      </div>
 
       <form className="contact-form">
         <input type="text" placeholder="Nom" />
