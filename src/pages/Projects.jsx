@@ -7,7 +7,7 @@ function Projects() {
   const projects = [
     {
       title: "Mini Market",
-      description: "Application e-commerce avec React et Laravel",
+      description: "Application avec React et Laravel",
       image: projet1,
       link: "https://github.com/mariama-sadio/mini-market"
     },
@@ -15,11 +15,11 @@ function Projects() {
       title: "Portfolio",
       description: "Mon site portfolio moderne avec React",
       image: projet2,
-      link: "https://github.com/mariama-sadio/portfolio"
+      link: "https://github.com/mariama-sadio/mini-market-portfolio"
     },
     {
       title: "Gestion des tâches",
-      description: "Application ToDo avec React",
+      description: "Application React",
       image: projet3,
       link: "#"
     }
