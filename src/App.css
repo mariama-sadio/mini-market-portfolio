@@ -123,6 +123,48 @@ img {
   color:white;
 }
 
+/*NAVBAR RESPONSIVE*/
+.hamburger {
+  display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .menu {
+    position: absolute;
+    top: 70px;
+    right: -100%;
+    width: 220px;
+    background: maroon;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+    transition: 0.3s;
+    border-radius: 0 0 0 10px;
+  }
+
+  .menu.active {
+    right: 0;
+  }
+
+  .menu a {
+    margin: 0;
+    font-size: 18px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+
 /* ABOUT */
 .about {
   padding: 80px 40px;
