@@ -1,27 +1,24 @@
+import { Link } from "react-router-dom"
 import projet1 from "../assets/hero.jpg"
 import projet2 from "../assets/photo.jpg"
 import projet3 from "../assets/projet3.jpg"
 
 function Projects() {
-
   const projects = [
     {
+      id: 1,
       title: "Mini Market",
-      description: "Application avec React et Laravel",
       image: projet1,
-      link: "https://github.com/mariama-sadio/mini-market"
     },
     {
+      id: 2,
       title: "Portfolio",
-      description: "Mon site portfolio moderne avec React",
       image: projet2,
-      link: "https://github.com/mariama-sadio/mini-market-portfolio"
     },
     {
+      id: 3,
       title: "Gestion des tâches",
-      description: "Application React",
       image: projet3,
-      link: "#"
     }
   ]
 
@@ -30,12 +27,19 @@ function Projects() {
       <h2>Mes projets</h2>
 
       <div className="projects-grid">
-        {projects.map((project, index) => (
-          <div className="project-card" key={index}>
+        {projects.map((project) => (
+          <div className="project-card" key={project.id}>
             <img src={project.image} alt={project.title} />
+
             <h3>{project.title}</h3>
-            <p>{project.description}</p>
-            <a href={project.link} target="_blank">Voir sur GitHub</a>
+
+            <div className="project-buttons">
+              <Link to={`/project/${project.id}`} className="btn">
+                Voir détail
+              </Link>
+
+            
+            </div>
           </div>
         ))}
       </div>
